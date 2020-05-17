@@ -77,6 +77,8 @@ target_include_directories(base
         ${CMAKE_CURRENT_SOURCE_DIR}/..
 )
 
+# PIN: 07.03.2020
+# disable warning LNK4221: no public symbols found; archive member will be inaccessible
 if(MSVC)
     set(CMAKE_STATIC_LINKER_FLAGS "${CMAKE_STATIC_LINKER_FLAGS} /IGNORE:4221")
 endif()
